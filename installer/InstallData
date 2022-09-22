@@ -1,0 +1,15 @@
+{
+    file = {
+        "/startup.lua",
+        "/system/debug.lua",
+        "/system/music.lua",
+        "/system/list.txt",
+        "/system/UI.nfp",
+        "/system/music2022.lua",
+		"/system/logo.lua"
+    },
+    dir = {
+        "/system",
+    },
+    version = "3.5.1"
+}
