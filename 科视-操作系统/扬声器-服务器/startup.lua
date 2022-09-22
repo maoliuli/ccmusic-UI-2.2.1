@@ -1,5 +1,5 @@
 local function PlayID(id,index)
-    local Buf = http.get("http://q1.getmc.cn:15848/minecraft%20ccmusic%20server/music/music"..id.."."..index..".dfpwm", { ["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" } ,true)
+    local Buf = http.get("https://raw.githubusercontent.com/maoliuli/ccmusic-UI-2.2.1/main/music/music"..id.."."..index..".dfpwm", { ["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" } ,true)
     if Buf ~= nil then
         local dfpwm = require("cc.audio.dfpwm")
         print("off")
@@ -32,7 +32,7 @@ local function PlayID(id,index)
 end
 --music--
 local function PlayID1(id)
-  local Buf = http.get("http://q1.getmc.cn:15848/minecraft%20ccmusic%20server/music/music"..id..".dfpwm", { ["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" } ,true)
+  local Buf = http.get("https://raw.githubusercontent.com/maoliuli/ccmusic-UI-2.2.1/main/music/music"..id..".dfpwm", { ["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" } ,true)
   if Buf ~= nil then
       local dfpwm = require("cc.audio.dfpwm")
       print(cmd3)
