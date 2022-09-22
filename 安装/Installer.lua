@@ -1,5 +1,5 @@
 
-shell.run("wget http://q1.getmc.cn:15848/installer/lib/name.nfp")
+shell.run("wget https://raw.githubusercontent.com/maoliuli/ccmusic-UI-2.2.1/main/installer/lib/name.nfp")
 term.write("Select Install Device")
 term.clear()
 term.setCursorPos(1,1)
@@ -24,15 +24,15 @@ io.write("name> ")
 cmd=io.read()
 rootUrl = "null"
 if cmd=="mp4" then
-    rootUrl = "http://q1.getmc.cn:15848/ccmusic%20UI2.1/HA-OS"
+    rootUrl = "https://raw.githubusercontent.com/maoliuli/ccmusic-UI-2.2.1/main/ccmusic%20UI2.1/HA-OS"
 end
 
 if cmd=="pc" then
-    rootUrl = "http://q1.getmc.cn:15848/ccmusic%20UI2.1/PC-OS"
+    rootUrl = "https://raw.githubusercontent.com/maoliuli/ccmusic-UI-2.2.1/main/ccmusic%20UI2.1/PC-OS"
 end
 
 if cmd=="screen" then
-    rootUrl = "http://q1.getmc.cn:15848/ccmusic%20UI2.1/MO-OS"
+    rootUrl = "https://raw.githubusercontent.com/maoliuli/ccmusic-UI-2.2.1/main/ccmusic%20UI2.1/MO-OS"
 end
 
 if cmd=="ktv" then
@@ -41,7 +41,7 @@ if cmd=="ktv" then
     io.write("name> ")
     cmd2=io.read()
     if cmd2 == "Forwarding-server" or cmd2 == "Speakers-server" or cmd2=="music-term" then
-        shell.run("wget http://q1.getmc.cn:15848/ccmusic%20UI2.1/KTV-OS/"..cmd2.."/startup.lua")
+        shell.run("wget https://raw.githubusercontent.com/maoliuli/ccmusic-UI-2.2.1/main/ccmusic%20UI2.1/KTV-OS/"..cmd2.."/startup.lua")
         shell.run("reboot")
     else
         error("There is no match "..cmd.." system!")
@@ -68,10 +68,10 @@ else
         handle:write(httpGet(url))
         handle:close()
     end
-    local serialization = load(httpGet("http://q1.getmc.cn:15848/installer/lib/serialization.lua"))()
+    local serialization = load(httpGet("https://raw.githubusercontent.com/maoliuli/ccmusic-UI-2.2.1/main/installer/lib/serialization.lua"))()
     local InstallData = {}
     local function init()
-        InstallData = serialization.unserialize(httpGet("http://q1.getmc.cn:15848/installer/InstallData"))
+        InstallData = serialization.unserialize(httpGet("https://raw.githubusercontent.com/maoliuli/ccmusic-UI-2.2.1/main/installer/InstallData"))
         if InstallData.version == nil then
             return "failed"
         end
