@@ -24,15 +24,15 @@ io.write("name> ")
 cmd=io.read()
 rootUrl = "null"
 if cmd=="mp4" then
-    rootUrl = "https://github.com/maoliuli/ccmusic-UI-2.2.1/tree/main/HA-OS"
+    rootUrl = "https://raw.githubusercontent.com/maoliuli/ccmusic-UI-2.2.1/main/HA-OS"
 end
 
 if cmd=="pc" then
-    rootUrl = "https://github.com/maoliuli/ccmusic-UI-2.2.1/tree/main/PC-OS"
+    rootUrl = "https://raw.githubusercontent.com/maoliuli/ccmusic-UI-2.2.1/main/PC-OS"
 end
 
 if cmd=="screen" then
-    rootUrl = "https://github.com/maoliuli/ccmusic-UI-2.2.1/tree/main/MO-OS"
+    rootUrl = "https://raw.githubusercontent.com/maoliuli/ccmusic-UI-2.2.1/main/MO-OS"
 end
 
 if cmd=="ktv" then
