@@ -89,7 +89,7 @@ else
         return "success"
     end
     if init() == "success" then
-        shell.run("wget https://raw.githubusercontent.com/maoliuli/ccmusic-UI-2.2.1/main/list.txt /system/list.txt")
+        shell.run("wget https://raw.githubusercontent.com/maoliuli/ccmusic-UI-2.2.1/main/list.txt")
         shell.run("reboot")
     else
         print("Initialize Failed.")
